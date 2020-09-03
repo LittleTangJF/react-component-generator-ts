@@ -1,0 +1,29 @@
+{
+    "reactjs": {
+        "prefix": "react-component",
+        "body": [
+            "import React, { Component } from 'react';",
+            "import './$componentName.css';\r\n",
+            "export default class $componentName extends Component {\r\n",
+            "\tconstructor(props) {",
+            "\t\tsuper(props);",
+            "\t}\r\n",
+            "\trender() {",
+            "\t\treturn(",
+            "\t\t\t<div className=\"$componentName\">",
+            "\t\t\t</div>",
+            "\t\t)",
+            "\t}",
+            "}"
+        ],
+        "description": "React snippet"
+    },
+    "css": {
+        "prefix": "react-component-css",
+        "body": [
+            ".$componentName {\r\n",
+            "}"
+        ],
+        "description": "React CSS Snippet"
+    }
+}
