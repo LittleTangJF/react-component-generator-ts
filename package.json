@@ -3,7 +3,7 @@
 	"publisher": "TrishantPahwa",
 	"displayName": "react-component-generator",
 	"description": "A component generator for ReactJS",
-	"version": "0.0.0",
+	"version": "0.0.2",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/trishantpahwa/react-component-generator.git"
@@ -19,6 +19,16 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"snippets": [
+			{
+				"language": "reactjs",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/snippets.json"
+			}
+		],
 		"menus": {
 			"explorer/context": [
 				{

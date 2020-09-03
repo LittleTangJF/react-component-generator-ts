@@ -23,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInputBox().then(function(componentName) {
 			fs.mkdirSync(rootPath + '/' + componentName);
 			function addSnippet(snippetType: string) {
-				const snippetsPath = path.join(__dirname, '../snippets/');
+				const snippetsPath = path.join(__dirname, './snippets/');
 				var body = JSON.parse(fs.readFileSync(snippetsPath + 'snippets.json').toString())[snippetType].body;
 				if(body.length) {
 					body = body.join('\r\n').split(/(?<!\\)\$componentName/gm).join(componentName);
